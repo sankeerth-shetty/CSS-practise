@@ -1,0 +1,25 @@
+*{
+    color: aliceblue;
+    font-size: large;
+    border: 0;
+}
+
+#header, #footer{
+    background-color: orangered;
+}
+
+.navbar{
+    background-color: blueviolet;
+}
+
+#article{
+    background-color: green;
+}
+
+#content{
+    background-color: goldenrod;
+}
+
+.aside{
+    background-color: darkblue;
+}

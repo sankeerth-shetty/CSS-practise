@@ -1,0 +1,48 @@
+.text1{
+    text-align: center;
+    font-weight: 700;
+}
+.text2{
+    text-decoration: line-through;
+    font-size: xx-large;
+}
+.text3{
+    text-transform: uppercase;
+    color: brown;
+    font-weight: 600;
+}
+.text4{
+    text-transform: capitalize;
+    text-align: right;
+    color: blue;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+}
+.text5{
+    text-shadow: 5px 5px 5px orange;
+    color: red;
+    font-size: x-large;
+    font-weight: 700;
+}
+.text6{
+    border: 1px solid black;
+    margin: 0 auto;
+    width: 10%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.text7{
+    word-spacing: 10px;
+}
+.text8{
+    letter-spacing: 10px;
+}
+.text9{
+    text-decoration-line:underline;
+    text-decoration-color: brown;
+}
+.text10{
+    text-indent: 200px;
+    font-weight: 700;
+}

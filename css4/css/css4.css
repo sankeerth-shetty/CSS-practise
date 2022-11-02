@@ -1,0 +1,10 @@
+*{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.head2{
+    border: 5px solid red;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 25px;
+}

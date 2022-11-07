@@ -1,11 +1,12 @@
 *{
     color: aliceblue;
     font-size: large;
-    border: 0;
+    border: 0px;
+    border-spacing: 0px;
 }
 
 #header, #footer{
-    background-color: orange;
+    background-color: tomato;
 }
 
 .navbar{

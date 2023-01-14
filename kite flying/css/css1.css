@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: url(../images/kite23.png), auto;
+}
+body{
+    width: 100%;
+    background-image: url(../images/sky_background.jpg);
+    background-size: cover;
+}
+.kite1{
+    width: 160px;
+    right: 100px;
+}
+.kite2{
+    width: 200px;
+    transform: rotateY(180deg);
+    left: 50px;
+}
+.kite3{
+    width: 160px;
+    left: 400px;
+}
+.kite4{
+    width: 200px;
+    transform: rotateY(180deg);
+    right: 400px;
+}
+.kite-top{
+    position: absolute;
+    top: 70px;
+}
+.kite-top2{
+    position: absolute;
+    top: 250px;
+}
+.kta1:hover{
+    animation: kta1 3s;
+    /* background-color: red; */
+}
+
+
+@keyframes kta1{
+    0%{
+        
+    }
+    100%{
+        opacity: 0%;
+    }
+}

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid car</title>
+    <style>
+        *{
+            /* border: 1px solid; */
+        }
+        .wrapper{
+            display: grid;
+            grid-template-columns: repeat(13,1fr);
+            grid-template-rows: minmax(90px, auto);
+            width: 50%;
+            margin: 0 auto;
+            /* height: 150px; */
+        }
+        .frame{
+            margin-top: 70px;
+        }
+        h1{
+            text-align: center;
+            margin-top: 30px;
+        }
+        .a{
+            grid-column: 1/4;
+            grid-row: 2/6;
+            height: 90px;
+            border-radius: 15px 0px 0px 0px;
+            display: grid;
+            gap: 10px;
+            grid-template-columns: (4,1fr);
+            background-color: rgb(145, 145, 145);
+            border: 2px solid;
+            border-right: 0px;
+        }
+        .b{
+            grid-column: 4/11;
+            grid-row: 1/6;
+            display: grid;
+            grid-template-columns: (3,1fr);
+            padding: 20px;
+            border-radius: 80px 80px 0px 0px;
+            background-color: rgb(145, 145, 145);
+            border: 2px solid;
+            /* grid-template-rows: minmax(0px, auto); */
+        }
+        .bWrap{
+            border: 1px solid;
+            display: grid;
+            grid-template-columns: (3,1fr);
+            border-radius: 80px 80px 0px 0px;
+            background-color: white;
+        }
+        .c{
+            grid-column: 1/2;
+            grid-row: 1/3;
+            border-radius: 80px 0px 0px 0px;
+            background-color: cyan;
+            border: 1px solid;
+            border-bottom: 0px;
+        }
+        .c:hover{
+            grid-row: 2/3;
+            transition-property: all;
+            transition-duration: 5s;
+        }
+        .d{
+            grid-column: 2/3;
+            grid-row: 1/3;
+            border-radius: 0px 80px 0px 0px;
+            background-color: cyan;
+            border: 1px solid;
+            border-left: 0px;
+            border-bottom: 0px;
+        }
+        .d:hover{
+            grid-row: 2/3;
+            transition-property: all;
+            transition-duration: 5s;
+        }
+        .e{
+            grid-column: 1/2;
+            grid-row: 3/5;
+            background-color: rgb(116, 116, 116);
+            border: 1px solid;
+        }
+        .f{
+            grid-column: 2/3;
+            grid-row: 3/5;
+            background-color: rgb(116, 116, 116);
+            border: 1px solid;
+            border-left: 0px;
+        }
+        .g{
+            grid-column: 11/14;
+            grid-row: 2/6;
+            border-radius: 0px 15px 0px 0px;
+            display: grid;
+            grid-template-columns: (3,1fr);
+            background-color: rgb(145, 145, 145);
+            border: 2px solid;
+            border-left: 0px;
+        }
+        .h{
+            grid-column: 2/4;
+            grid-row: 5/7;
+            height: 100px;
+            gap: 15px;
+            border-radius: 50px;
+            display: grid;
+            grid-template-columns: (4,1fr);
+            background-color: rgb(44, 44, 44);
+        }
+        .i{
+            grid-column: 11/13;
+            grid-row: 5/7;
+            height: 100px;
+            gap: 50px;
+            border-radius: 50px;
+            display: grid;
+            grid-template-columns: (4,1fr);
+            background-color: rgb(44, 44, 44);
+        }
+        .j{
+            grid-column: 4;
+            grid-row: 1;
+            height: 38px;
+            margin-top: 15px;
+            margin-right: 2px;
+            border-radius: 50px;
+            background-color: yellow;
+        }
+        .k{
+            grid-column: 1;
+            grid-row: 1;
+            height: 40px;
+            margin: 30px;
+            border-radius: 50px;
+            background-color: rgb(126, 126, 126);
+            border: 2px dotted;
+        }
+        .k:hover{
+            animation-name: rotation;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        .l{
+            grid-column: 1;
+            grid-row: 1;
+            height: 40px;
+            margin: 30px;
+            border-radius: 50px;
+            background-color: rgb(126, 126, 126);
+            border: 2px dotted;
+        }
+        .l:hover{
+            animation-name: rotation;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        .m{
+            grid-column: 1;
+            grid-row: 1;
+            width: 15%;
+            height: 20px;
+            margin: 10px;
+            border-radius: 50px;
+            background-color: red;
+        }
+        .n{
+            grid-column: 1;
+            grid-row: 2;
+            width: 15%;
+            height: 20px;
+            margin-left: 10px;
+            border-radius: 50px;
+            background-color: red;
+        }
+
+        @keyframes rotation {
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Car made with grid</h1>
+    <div class="frame">
+        <div class="wrapper">
+            <div class="a">
+                <div class="m"></div>
+                <div class="n"></div>
+            </div>
+            <div class="b">
+                <div class="bWrap">
+                    <div class="c"></div>
+                    <div class="d"></div>
+                    <div class="e"></div>
+                    <div class="f"></div>
+                </div>
+            </div>
+            <div class="g">
+                <div class="j"></div>
+            </div>
+            <div class="h">
+                <div class="k"></div>
+            </div>
+            <div class="i">
+                <div class="l"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

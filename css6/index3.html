@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid 3</title>
+    <style>
+        *{
+            /* border: 1px solid; */
+            font-size: xx-large;
+            text-transform: uppercase;
+            border-radius: 5px;
+        }
+        h1{
+            text-transform: uppercase;
+            margin-top: 50px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .wrapper{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            grid-auto-rows: minmax(100px, auto);
+            gap: 10px;
+        }
+        .a{
+            grid-column: 1/3;
+            grid-row: 1/2;
+            padding: 20px 20px;
+            background-color: rgb(71, 71, 71);
+            color: #fff;
+        }
+        .b{
+            grid-column: 5;
+            grid-row: 1;
+            padding: 20px 20px;
+            background-color: rgb(71, 71, 71); 
+            color: #fff;
+        }
+        .c{
+            grid-column: 1/2;
+            grid-row: 2/4;
+            padding: 20px 20px;
+            background-color: rgb(71, 71, 71); 
+            color: #fff;
+        }
+        .d{
+            grid-column: 2/6;
+            grid-row: 2/4;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-auto-rows: minmax(90px, auto);
+            gap: 20px;
+            padding: 20px;
+            background-color: rgb(71, 71, 71); 
+        }
+        .e{
+            grid-column: 1;
+            grid-row: 1;
+            padding: 20px 20px;
+            background-color: rgb(192, 192, 192);
+            color: rgb(71, 71, 71);
+        }
+        .f{
+            grid-column: 2/4;
+            grid-row: 1;
+            padding: 20px 20px;
+            background-color: rgb(192, 192, 192);
+            color: rgb(71, 71, 71);
+        }
+        .g{
+            grid-column: 4;
+            grid-row: 1;
+            padding: 20px 20px;
+            background-color: rgb(192, 192, 192);
+            color: rgb(71, 71, 71);
+        }
+        .h{
+            grid-column: 1;
+            grid-row: 2;
+            padding: 20px 20px;
+            background-color: rgb(192, 192, 192);
+            color: rgb(71, 71, 71);
+        }
+        .i{
+            grid-column: 2/4;
+            grid-row: 2;
+            padding: 20px 20px;
+            background-color: rgb(192, 192, 192);
+            color: rgb(71, 71, 71);
+        }
+        .j{
+            grid-column: 4;
+            grid-row: 2;
+            padding: 20px 20px;
+            background-color: rgb(192, 192, 192);
+            color: rgb(71, 71, 71);
+        }
+        .frame{
+            margin: 0 auto;
+            width: 50%;
+            padding: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Grid 3 - Nested grid example</h1>
+    <div class="frame">
+        <div class="wrapper">
+            <div class="a">a</div>
+            <div class="b">b</div>
+            <div class="c">c</div>
+            <div class="d">
+                <div class="e">e</div>
+                <div class="f">f</div>
+                <div class="g">g</div>
+                <div class="h">h</div>
+                <div class="i">i</div>
+                <div class="j">j</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
